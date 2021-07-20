@@ -12,7 +12,7 @@ df
 #now view the data type again to verify if "date" column
 df.dtypes
 
-df['Year'] = df.date.dt.year #This line is not important but for clearity. It can also be commented out as it does not affect or add anything value to the data
+df['Year'] = df.date.dt.year #This line is not important but for clearity. It can also be commented out as it does not affect or add value to the data
 df
 
 year_stamp = df['Year'].loc[(df.Year < 2021) & (df.Year >= 2021)] #comparing the year in bool
